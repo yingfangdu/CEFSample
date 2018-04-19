@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC38BCD92087E65E009D92AB /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC38BCD82087E65E009D92AB /* AppDelegate.mm */; };
+		BC38BCDC2087E65E009D92AB /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC38BCDB2087E65E009D92AB /* ViewController.mm */; };
+		BC38BCDE2087E65E009D92AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC38BCDD2087E65E009D92AB /* Assets.xcassets */; };
+		BC38BCE12087E65E009D92AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC38BCDF2087E65E009D92AB /* Main.storyboard */; };
+		BC38BCE42087E65E009D92AB /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC38BCE32087E65E009D92AB /* main.mm */; };
+		BC38BCF22087E798009D92AB /* SimpleHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC38BCF02087E798009D92AB /* SimpleHandler.cpp */; };
+		BC38BCF42087E8FC009D92AB /* SimpleHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC38BCF32087E8FC009D92AB /* SimpleHandler.mm */; };
+		BC38BCF72087E999009D92AB /* SimpleApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC38BCF52087E999009D92AB /* SimpleApp.cpp */; };
+		BC38BD112087F15E009D92AB /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC38BD102087F15E009D92AB /* main.mm */; };
+		BC38BD262087FE1D009D92AB /* Chromium Embedded Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC38BD1D2087FC24009D92AB /* Chromium Embedded Framework.framework */; };
+		BC38BD282087FE37009D92AB /* Chromium Embedded Framework.framework in Resources */ = {isa = PBXBuildFile; fileRef = BC38BD272087FE37009D92AB /* Chromium Embedded Framework.framework */; };
+		BC38BD2A2087FE74009D92AB /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC38BD292087FE74009D92AB /* libcef_dll_wrapper.a */; };
+		BC38BD2B2087FE87009D92AB /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC38BD292087FE74009D92AB /* libcef_dll_wrapper.a */; };
+		BC38BD2C2087FE95009D92AB /* Chromium Embedded Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC38BD272087FE37009D92AB /* Chromium Embedded Framework.framework */; };
+		BC38BD2D2087FF1F009D92AB /* Chromium Embedded Framework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC38BD272087FE37009D92AB /* Chromium Embedded Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BC38BD2E2087FF28009D92AB /* CEFSample Helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC38BD022087F15E009D92AB /* CEFSample Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCDBC327208909F300FF83AE /* SimpleApplication.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCDBC326208909F300FF83AE /* SimpleApplication.mm */; };
+		BCDBC32A2089140500FF83AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDBC3292089140400FF83AE /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC38BCFB2087F0BE009D92AB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BC38BD2E2087FF28009D92AB /* CEFSample Helper.app in CopyFiles */,
+				BC38BD2D2087FF1F009D92AB /* Chromium Embedded Framework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BC38BCD42087E65E009D92AB /* CEFSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CEFSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC38BCD72087E65E009D92AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC38BCD82087E65E009D92AB /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		BC38BCDA2087E65E009D92AB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BC38BCDB2087E65E009D92AB /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		BC38BCDD2087E65E009D92AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC38BCE02087E65E009D92AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC38BCE22087E65E009D92AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC38BCE32087E65E009D92AB /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		BC38BCE52087E65E009D92AB /* CEFSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CEFSample.entitlements; sourceTree = "<group>"; };
+		BC38BCF02087E798009D92AB /* SimpleHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleHandler.cpp; sourceTree = "<group>"; };
+		BC38BCF12087E798009D92AB /* SimpleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleHandler.h; sourceTree = "<group>"; };
+		BC38BCF32087E8FC009D92AB /* SimpleHandler.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SimpleHandler.mm; sourceTree = "<group>"; };
+		BC38BCF52087E999009D92AB /* SimpleApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleApp.cpp; sourceTree = "<group>"; };
+		BC38BCF62087E999009D92AB /* SimpleApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleApp.h; sourceTree = "<group>"; };
+		BC38BD022087F15E009D92AB /* CEFSample Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CEFSample Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC38BD0F2087F15E009D92AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC38BD102087F15E009D92AB /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		BC38BD122087F15E009D92AB /* CEFSampleHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CEFSampleHelper.entitlements; sourceTree = "<group>"; };
+		BC38BD1D2087FC24009D92AB /* Chromium Embedded Framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Chromium Embedded Framework.framework"; path = "../../../../Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64/Chromium Embedded Framework.framework"; sourceTree = "<group>"; };
+		BC38BD272087FE37009D92AB /* Chromium Embedded Framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Chromium Embedded Framework.framework"; path = "../../../../Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64/Chromium Embedded Framework.framework"; sourceTree = "<group>"; };
+		BC38BD292087FE74009D92AB /* libcef_dll_wrapper.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcef_dll_wrapper.a; path = ../../../../Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64/obj/cef/libcef_dll_wrapper.a; sourceTree = "<group>"; };
+		BCDBC326208909F300FF83AE /* SimpleApplication.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SimpleApplication.mm; sourceTree = "<group>"; };
+		BCDBC3292089140400FF83AE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BCDBC32B2089148D00FF83AE /* SimpleApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleApplication.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC38BCD12087E65E009D92AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCDBC32A2089140500FF83AE /* Cocoa.framework in Frameworks */,
+				BC38BD2C2087FE95009D92AB /* Chromium Embedded Framework.framework in Frameworks */,
+				BC38BD2B2087FE87009D92AB /* libcef_dll_wrapper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC38BCFF2087F15E009D92AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC38BD2A2087FE74009D92AB /* libcef_dll_wrapper.a in Frameworks */,
+				BC38BD262087FE1D009D92AB /* Chromium Embedded Framework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC38BCCB2087E65E009D92AB = {
+			isa = PBXGroup;
+			children = (
+				BC38BD272087FE37009D92AB /* Chromium Embedded Framework.framework */,
+				BC38BCD62087E65E009D92AB /* CEFSample */,
+				BC38BD032087F15E009D92AB /* CEFSampleHelper */,
+				BC38BCD52087E65E009D92AB /* Products */,
+				BC38BCEB2087E6BD009D92AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC38BCD52087E65E009D92AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC38BCD42087E65E009D92AB /* CEFSample.app */,
+				BC38BD022087F15E009D92AB /* CEFSample Helper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC38BCD62087E65E009D92AB /* CEFSample */ = {
+			isa = PBXGroup;
+			children = (
+				BC38BCD72087E65E009D92AB /* AppDelegate.h */,
+				BC38BCD82087E65E009D92AB /* AppDelegate.mm */,
+				BC38BCDA2087E65E009D92AB /* ViewController.h */,
+				BC38BCDB2087E65E009D92AB /* ViewController.mm */,
+				BC38BCDD2087E65E009D92AB /* Assets.xcassets */,
+				BC38BCDF2087E65E009D92AB /* Main.storyboard */,
+				BC38BCE22087E65E009D92AB /* Info.plist */,
+				BC38BCE32087E65E009D92AB /* main.mm */,
+				BC38BCE52087E65E009D92AB /* CEFSample.entitlements */,
+				BC38BCF02087E798009D92AB /* SimpleHandler.cpp */,
+				BC38BCF12087E798009D92AB /* SimpleHandler.h */,
+				BC38BCF32087E8FC009D92AB /* SimpleHandler.mm */,
+				BC38BCF52087E999009D92AB /* SimpleApp.cpp */,
+				BC38BCF62087E999009D92AB /* SimpleApp.h */,
+				BCDBC326208909F300FF83AE /* SimpleApplication.mm */,
+				BCDBC32B2089148D00FF83AE /* SimpleApplication.h */,
+			);
+			path = CEFSample;
+			sourceTree = "<group>";
+		};
+		BC38BCEB2087E6BD009D92AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCDBC3292089140400FF83AE /* Cocoa.framework */,
+				BC38BD292087FE74009D92AB /* libcef_dll_wrapper.a */,
+				BC38BD1D2087FC24009D92AB /* Chromium Embedded Framework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC38BD032087F15E009D92AB /* CEFSampleHelper */ = {
+			isa = PBXGroup;
+			children = (
+				BC38BD0F2087F15E009D92AB /* Info.plist */,
+				BC38BD102087F15E009D92AB /* main.mm */,
+				BC38BD122087F15E009D92AB /* CEFSampleHelper.entitlements */,
+			);
+			path = CEFSampleHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC38BCD32087E65E009D92AB /* CEFSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC38BCE82087E65E009D92AB /* Build configuration list for PBXNativeTarget "CEFSample" */;
+			buildPhases = (
+				BC38BCD02087E65E009D92AB /* Sources */,
+				BC38BCD12087E65E009D92AB /* Frameworks */,
+				BC38BCD22087E65E009D92AB /* Resources */,
+				BC38BCFB2087F0BE009D92AB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CEFSample;
+			productName = CEFSample;
+			productReference = BC38BCD42087E65E009D92AB /* CEFSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC38BD012087F15E009D92AB /* CEFSampleHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC38BD132087F15E009D92AB /* Build configuration list for PBXNativeTarget "CEFSampleHelper" */;
+			buildPhases = (
+				BC38BCFE2087F15E009D92AB /* Sources */,
+				BC38BCFF2087F15E009D92AB /* Frameworks */,
+				BC38BD002087F15E009D92AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CEFSampleHelper;
+			productName = CEFSampleHelper;
+			productReference = BC38BD022087F15E009D92AB /* CEFSample Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC38BCCC2087E65E009D92AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = YvonneDu;
+				TargetAttributes = {
+					BC38BCD32087E65E009D92AB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					BC38BD012087F15E009D92AB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = BC38BCCF2087E65E009D92AB /* Build configuration list for PBXProject "CEFSample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC38BCCB2087E65E009D92AB;
+			productRefGroup = BC38BCD52087E65E009D92AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC38BCD32087E65E009D92AB /* CEFSample */,
+				BC38BD012087F15E009D92AB /* CEFSampleHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC38BCD22087E65E009D92AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC38BCDE2087E65E009D92AB /* Assets.xcassets in Resources */,
+				BC38BCE12087E65E009D92AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC38BD002087F15E009D92AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC38BD282087FE37009D92AB /* Chromium Embedded Framework.framework in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC38BCD02087E65E009D92AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC38BCF42087E8FC009D92AB /* SimpleHandler.mm in Sources */,
+				BC38BCDC2087E65E009D92AB /* ViewController.mm in Sources */,
+				BCDBC327208909F300FF83AE /* SimpleApplication.mm in Sources */,
+				BC38BCE42087E65E009D92AB /* main.mm in Sources */,
+				BC38BCF22087E798009D92AB /* SimpleHandler.cpp in Sources */,
+				BC38BCD92087E65E009D92AB /* AppDelegate.mm in Sources */,
+				BC38BCF72087E999009D92AB /* SimpleApp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC38BCFE2087F15E009D92AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC38BD112087F15E009D92AB /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BC38BCDF2087E65E009D92AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC38BCE02087E65E009D92AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC38BCE62087E65E009D92AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BC38BCE72087E65E009D92AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BC38BCE92087E65E009D92AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = /Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64;
+				HEADER_SEARCH_PATHS = (
+					/Users/yvonnedu/Source/CEF/chromium_git/chromium/src/cef/include,
+					/Users/yvonnedu/Source/CEF/chromium_git/chromium/src/cef/,
+				);
+				INFOPLIST_FILE = CEFSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../";
+				LIBRARY_SEARCH_PATHS = /Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64/obj/cef;
+				PRODUCT_BUNDLE_IDENTIFIER = ms.CEFSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		BC38BCEA2087E65E009D92AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = /Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64;
+				HEADER_SEARCH_PATHS = (
+					/Users/yvonnedu/Source/CEF/chromium_git/chromium/src/cef/include,
+					/Users/yvonnedu/Source/CEF/chromium_git/chromium/src/cef/,
+				);
+				INFOPLIST_FILE = CEFSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../";
+				LIBRARY_SEARCH_PATHS = /Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64/obj/cef;
+				PRODUCT_BUNDLE_IDENTIFIER = ms.CEFSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		BC38BD142087F15E009D92AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64;
+				HEADER_SEARCH_PATHS = (
+					/Users/yvonnedu/Source/CEF/chromium_git/chromium/src/cef/include,
+					/Users/yvonnedu/Source/CEF/chromium_git/chromium/src/cef/,
+				);
+				INFOPLIST_FILE = CEFSampleHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../../../../";
+				LIBRARY_SEARCH_PATHS = /Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64/obj/cef;
+				PRODUCT_BUNDLE_IDENTIFIER = ms.CEFSampleHelper;
+				PRODUCT_NAME = "CEFSample Helper";
+			};
+			name = Debug;
+		};
+		BC38BD152087F15E009D92AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64;
+				HEADER_SEARCH_PATHS = (
+					/Users/yvonnedu/Source/CEF/chromium_git/chromium/src/cef/include,
+					/Users/yvonnedu/Source/CEF/chromium_git/chromium/src/cef/,
+				);
+				INFOPLIST_FILE = CEFSampleHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../../../../";
+				LIBRARY_SEARCH_PATHS = /Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64/obj/cef;
+				PRODUCT_BUNDLE_IDENTIFIER = ms.CEFSampleHelper;
+				PRODUCT_NAME = "CEFSample Helper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC38BCCF2087E65E009D92AB /* Build configuration list for PBXProject "CEFSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC38BCE62087E65E009D92AB /* Debug */,
+				BC38BCE72087E65E009D92AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC38BCE82087E65E009D92AB /* Build configuration list for PBXNativeTarget "CEFSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC38BCE92087E65E009D92AB /* Debug */,
+				BC38BCEA2087E65E009D92AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC38BD132087F15E009D92AB /* Build configuration list for PBXNativeTarget "CEFSampleHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC38BD142087F15E009D92AB /* Debug */,
+				BC38BD152087F15E009D92AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC38BCCC2087E65E009D92AB /* Project object */;
+}
