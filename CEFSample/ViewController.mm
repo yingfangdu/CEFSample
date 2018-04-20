@@ -7,14 +7,7 @@
 //
 
 #import "ViewController.h"
-
-#include "include/cef_browser.h"
-#include "include/cef_command_line.h"
-#include "include/views/cef_browser_view.h"
-#include "include/views/cef_window.h"
-#include "include/wrapper/cef_helpers.h"
-#include "SimpleHandler.h"
-#include "include/cef_app.h"
+#import "BrowserWindowController.h"
 
 @implementation ViewController
 
@@ -33,19 +26,12 @@
 
 
 - (IBAction)createBrowser:(id)sender {
-    // SimpleHandler implements browser-level callbacks.
-    CefRefPtr<SimpleHandler> handler(SimpleHandler::GetInstance());
-    
-    // Specify CEF browser settings here.
-    CefBrowserSettings browser_settings;
-    
-    CefWindowInfo window_info;
-    
-    std::string url = "www.google.com";
-    
-    // Create the first browser window.
-    CefBrowserHost::CreateBrowser(window_info, handler, url, browser_settings, NULL);
-//    CefRunMessageLoop();
 }
-    
+
+- (IBAction)createBrowserInView:(id)sender
+{
+    TestBrowserWindowController *controller = [[TestBrowserWindowController alloc] initWithWindowNibName:@"BrowserWindow"];
+    [[controller window] makeKeyAndOrderFront:self];
+}
+
 @end

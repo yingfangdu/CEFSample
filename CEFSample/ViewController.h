@@ -11,6 +11,7 @@
 @interface ViewController : NSViewController
 
 - (IBAction)createBrowser:(id)sender;
+- (IBAction)createBrowserInView:(id)sender;
 
 @end
 

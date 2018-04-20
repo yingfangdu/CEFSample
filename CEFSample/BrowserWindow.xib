@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TestBrowserWindowController">
+            <connections>
+                <outlet property="URLField" destination="YTh-1x-ZCL" id="NgE-pI-p4E"/>
+                <outlet property="browserView" destination="c7H-5O-ISr" id="6bL-uS-Fn9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="CEFBrowser in a View" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="881" height="524"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="881" height="524"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="c7H-5O-ISr" customClass="CEFBrowserView">
+                        <rect key="frame" x="20" y="20" width="841" height="442"/>
+                    </customView>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YTh-1x-ZCL">
+                        <rect key="frame" x="20" y="482" width="841" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Xb3-af-R5A">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <outlet property="delegate" destination="-2" id="7fy-3S-thH"/>
+                        </connections>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="YTh-1x-ZCL" secondAttribute="trailing" constant="20" id="12Z-AJ-zMU"/>
+                    <constraint firstAttribute="trailing" secondItem="c7H-5O-ISr" secondAttribute="trailing" constant="20" id="83L-8Y-RRV"/>
+                    <constraint firstItem="YTh-1x-ZCL" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="MDE-mq-sIn"/>
+                    <constraint firstAttribute="bottom" secondItem="c7H-5O-ISr" secondAttribute="bottom" constant="20" id="fcX-Hz-htc"/>
+                    <constraint firstItem="c7H-5O-ISr" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="mkQ-PU-0sO"/>
+                    <constraint firstItem="YTh-1x-ZCL" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="wE6-CG-Mwx"/>
+                    <constraint firstItem="c7H-5O-ISr" firstAttribute="top" secondItem="YTh-1x-ZCL" secondAttribute="bottom" constant="20" id="yhK-eX-NfE"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="321.5" y="289"/>
+        </window>
+    </objects>
+</document>
