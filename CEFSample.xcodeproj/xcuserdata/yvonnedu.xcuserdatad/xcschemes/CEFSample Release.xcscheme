@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BC38BCD32087E65E009D92AB"
-               BuildableName = "CEFSample Helper.app"
+               BuildableName = "CEFSample.app"
                BlueprintName = "CEFSample"
                ReferencedContainer = "container:CEFSample.xcodeproj">
             </BuildableReference>
@@ -34,7 +34,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BC38BCD32087E65E009D92AB"
-            BuildableName = "CEFSample Helper.app"
+            BuildableName = "CEFSample.app"
             BlueprintName = "CEFSample"
             ReferencedContainer = "container:CEFSample.xcodeproj">
          </BuildableReference>
@@ -58,7 +58,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BC38BCD32087E65E009D92AB"
-            BuildableName = "CEFSample Helper.app"
+            BuildableName = "CEFSample.app"
             BlueprintName = "CEFSample"
             ReferencedContainer = "container:CEFSample.xcodeproj">
          </BuildableReference>
@@ -77,7 +77,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BC38BCD32087E65E009D92AB"
-            BuildableName = "CEFSample Helper.app"
+            BuildableName = "CEFSample.app"
             BlueprintName = "CEFSample"
             ReferencedContainer = "container:CEFSample.xcodeproj">
          </BuildableReference>
