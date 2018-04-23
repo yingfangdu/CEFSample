@@ -13,15 +13,19 @@
 		BC38BCE12087E65E009D92AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC38BCDF2087E65E009D92AB /* Main.storyboard */; };
 		BC38BCE42087E65E009D92AB /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC38BCE32087E65E009D92AB /* main.mm */; };
 		BC38BD112087F15E009D92AB /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC38BD102087F15E009D92AB /* main.mm */; };
-		BC38BD262087FE1D009D92AB /* Chromium Embedded Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC38BD1D2087FC24009D92AB /* Chromium Embedded Framework.framework */; };
-		BC38BD282087FE37009D92AB /* Chromium Embedded Framework.framework in Resources */ = {isa = PBXBuildFile; fileRef = BC38BD272087FE37009D92AB /* Chromium Embedded Framework.framework */; };
-		BC38BD2D2087FF1F009D92AB /* Chromium Embedded Framework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC38BD272087FE37009D92AB /* Chromium Embedded Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BC38BD2E2087FF28009D92AB /* CEFSample Helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC38BD022087F15E009D92AB /* CEFSample Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BC5FA49D208E408000B37EB3 /* Chromium Embedded Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5FA49C208E408000B37EB3 /* Chromium Embedded Framework.framework */; };
+		BC5FA49F208E409200B37EB3 /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5FA49E208E409200B37EB3 /* libcef_dll_wrapper.a */; };
+		BC5FA4A0208E40A500B37EB3 /* Chromium Embedded Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5FA49C208E408000B37EB3 /* Chromium Embedded Framework.framework */; };
+		BC5FA4A1208E40B000B37EB3 /* Chromium Embedded Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5FA49C208E408000B37EB3 /* Chromium Embedded Framework.framework */; };
+		BC5FA4A2208E40B700B37EB3 /* Chromium Embedded Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5FA49C208E408000B37EB3 /* Chromium Embedded Framework.framework */; };
+		BC5FA4A3208E40C700B37EB3 /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5FA49E208E409200B37EB3 /* libcef_dll_wrapper.a */; };
+		BC5FA4A4208E40FC00B37EB3 /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5FA49E208E409200B37EB3 /* libcef_dll_wrapper.a */; };
+		BC5FA4A5208E410400B37EB3 /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5FA49E208E409200B37EB3 /* libcef_dll_wrapper.a */; };
+		BC5FA4A9208E453900B37EB3 /* Chromium Embedded Framework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC5FA49C208E408000B37EB3 /* Chromium Embedded Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BC5FA4AB208E46DA00B37EB3 /* CEFSample Helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC38BD022087F15E009D92AB /* CEFSample Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BCDBC32A2089140500FF83AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDBC3292089140400FF83AE /* Cocoa.framework */; };
 		BCDBC32F20892D5C00FF83AE /* BrowserWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCDBC32E20892D5C00FF83AE /* BrowserWindow.xib */; };
 		BCDBC34E2089653D00FF83AE /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC38BD102087F15E009D92AB /* main.mm */; };
-		BCDBC3512089653D00FF83AE /* Chromium Embedded Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC38BD1D2087FC24009D92AB /* Chromium Embedded Framework.framework */; };
-		BCDBC3532089653D00FF83AE /* Chromium Embedded Framework.framework in Resources */ = {isa = PBXBuildFile; fileRef = BC38BD272087FE37009D92AB /* Chromium Embedded Framework.framework */; };
 		BCDBC36C208A4BDE00FF83AE /* CEFGlue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDBC365208A4BDD00FF83AE /* CEFGlue.framework */; };
 		BCDBC36D208A4BDE00FF83AE /* CEFGlue.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCDBC365208A4BDD00FF83AE /* CEFGlue.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BCDBC371208A4BEC00FF83AE /* CEFApplication.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCDBC35B208A420A00FF83AE /* CEFApplication.mm */; };
@@ -30,12 +34,8 @@
 		BCDBC379208A4C2D00FF83AE /* CEFBrowserView.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDBC3302089346800FF83AE /* CEFBrowserView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCDBC37C208A4F1300FF83AE /* CEFBootstrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCDBC37B208A4F1300FF83AE /* CEFBootstrapper.mm */; };
 		BCDBC37E208A50DB00FF83AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDBC3292089140400FF83AE /* Cocoa.framework */; };
-		BCDBC37F208A50E700FF83AE /* Chromium Embedded Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC38BD1D2087FC24009D92AB /* Chromium Embedded Framework.framework */; };
-		BCDBC380208A50FB00FF83AE /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC38BD292087FE74009D92AB /* libcef_dll_wrapper.a */; };
 		BCDBC381208A511C00FF83AE /* CEFBootstrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDBC37D208A4F3400FF83AE /* CEFBootstrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCDBC383208A519300FF83AE /* WebClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCDBC382208A519300FF83AE /* WebClient.mm */; };
-		BCDBC387208A563F00FF83AE /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC38BD292087FE74009D92AB /* libcef_dll_wrapper.a */; };
-		BCDBC388208A564F00FF83AE /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC38BD292087FE74009D92AB /* libcef_dll_wrapper.a */; };
 		BCDBC38A208A651A00FF83AE /* CEFGlue.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDBC389208A64FE00FF83AE /* CEFGlue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCDBC38C208A86FE00FF83AE /* BrowserWindowController.h in Sources */ = {isa = PBXBuildFile; fileRef = BCDBC38B208A86FE00FF83AE /* BrowserWindowController.h */; };
 		BCDBC38E208A888500FF83AE /* BrowserWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCDBC38D208A888500FF83AE /* BrowserWindowController.mm */; };
@@ -55,7 +55,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BCDBC33E208948A400FF83AE /* PBXContainerItemProxy */ = {
+		BC5FA4A6208E41E800B37EB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BC38BCCC2087E65E009D92AB /* Project object */;
 			proxyType = 1;
@@ -85,8 +85,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BC38BD2E2087FF28009D92AB /* CEFSample Helper.app in CopyFiles */,
-				BC38BD2D2087FF1F009D92AB /* Chromium Embedded Framework.framework in CopyFiles */,
+				BC5FA4AB208E46DA00B37EB3 /* CEFSample Helper.app in CopyFiles */,
+				BC5FA4A9208E453900B37EB3 /* Chromium Embedded Framework.framework in CopyFiles */,
 				BCDBC36D208A4BDE00FF83AE /* CEFGlue.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,9 +109,8 @@
 		BC38BD0F2087F15E009D92AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC38BD102087F15E009D92AB /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		BC38BD122087F15E009D92AB /* CEFSampleHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CEFSampleHelper.entitlements; sourceTree = "<group>"; };
-		BC38BD1D2087FC24009D92AB /* Chromium Embedded Framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Chromium Embedded Framework.framework"; path = "../../../../Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64/Chromium Embedded Framework.framework"; sourceTree = "<group>"; };
-		BC38BD272087FE37009D92AB /* Chromium Embedded Framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Chromium Embedded Framework.framework"; path = "../../../../Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64/Chromium Embedded Framework.framework"; sourceTree = "<group>"; };
-		BC38BD292087FE74009D92AB /* libcef_dll_wrapper.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcef_dll_wrapper.a; path = ../../../../Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64/obj/cef/libcef_dll_wrapper.a; sourceTree = "<group>"; };
+		BC5FA49C208E408000B37EB3 /* Chromium Embedded Framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Chromium Embedded Framework.framework"; path = "../../../../Users/yvonnedu/Downloads/CEF/Release/Chromium Embedded Framework.framework"; sourceTree = "<group>"; };
+		BC5FA49E208E409200B37EB3 /* libcef_dll_wrapper.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcef_dll_wrapper.a; path = ../../../../Users/yvonnedu/Downloads/CEF/libcef_dll_wrapper/Release/libcef_dll_wrapper.a; sourceTree = "<group>"; };
 		BCDBC3292089140400FF83AE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BCDBC32C20892A5000FF83AE /* CEFBrowserView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CEFBrowserView.mm; sourceTree = "<group>"; };
 		BCDBC32E20892D5C00FF83AE /* BrowserWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrowserWindow.xib; sourceTree = "<group>"; };
@@ -147,6 +146,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5FA49F208E409200B37EB3 /* libcef_dll_wrapper.a in Frameworks */,
+				BC5FA49D208E408000B37EB3 /* Chromium Embedded Framework.framework in Frameworks */,
 				BCDBC36C208A4BDE00FF83AE /* CEFGlue.framework in Frameworks */,
 				BCDBC32A2089140500FF83AE /* Cocoa.framework in Frameworks */,
 			);
@@ -156,8 +157,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCDBC387208A563F00FF83AE /* libcef_dll_wrapper.a in Frameworks */,
-				BC38BD262087FE1D009D92AB /* Chromium Embedded Framework.framework in Frameworks */,
+				BC5FA4A4208E40FC00B37EB3 /* libcef_dll_wrapper.a in Frameworks */,
+				BC5FA4A0208E40A500B37EB3 /* Chromium Embedded Framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,8 +166,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCDBC388208A564F00FF83AE /* libcef_dll_wrapper.a in Frameworks */,
-				BCDBC3512089653D00FF83AE /* Chromium Embedded Framework.framework in Frameworks */,
+				BC5FA4A5208E410400B37EB3 /* libcef_dll_wrapper.a in Frameworks */,
+				BC5FA4A1208E40B000B37EB3 /* Chromium Embedded Framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,8 +175,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCDBC380208A50FB00FF83AE /* libcef_dll_wrapper.a in Frameworks */,
-				BCDBC37F208A50E700FF83AE /* Chromium Embedded Framework.framework in Frameworks */,
+				BC5FA4A3208E40C700B37EB3 /* libcef_dll_wrapper.a in Frameworks */,
+				BC5FA4A2208E40B700B37EB3 /* Chromium Embedded Framework.framework in Frameworks */,
 				BCDBC37E208A50DB00FF83AE /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,7 +189,6 @@
 			children = (
 				BCDBC38F208A8CD200FF83AE /* Config */,
 				BCDBC33920893FD200FF83AE /* CEFGlue */,
-				BC38BD272087FE37009D92AB /* Chromium Embedded Framework.framework */,
 				BC38BCD62087E65E009D92AB /* CEFSample */,
 				BC38BD032087F15E009D92AB /* CEFSampleHelper */,
 				BC38BCD52087E65E009D92AB /* Products */,
@@ -228,9 +228,9 @@
 		BC38BCEB2087E6BD009D92AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC5FA49E208E409200B37EB3 /* libcef_dll_wrapper.a */,
+				BC5FA49C208E408000B37EB3 /* Chromium Embedded Framework.framework */,
 				BCDBC3292089140400FF83AE /* Cocoa.framework */,
-				BC38BD292087FE74009D92AB /* libcef_dll_wrapper.a */,
-				BC38BD1D2087FC24009D92AB /* Chromium Embedded Framework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -312,8 +312,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				BC5FA4A7208E41E800B37EB3 /* PBXTargetDependency */,
 				BCDBC35A2089655D00FF83AE /* PBXTargetDependency */,
-				BCDBC33F208948A400FF83AE /* PBXTargetDependency */,
 				BCDBC36B208A4BDE00FF83AE /* PBXTargetDependency */,
 			);
 			name = CEFSample;
@@ -458,7 +458,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC38BD282087FE37009D92AB /* Chromium Embedded Framework.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,7 +465,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCDBC3532089653D00FF83AE /* Chromium Embedded Framework.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,10 +520,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BCDBC33F208948A400FF83AE /* PBXTargetDependency */ = {
+		BC5FA4A7208E41E800B37EB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BC38BD012087F15E009D92AB /* CEFSampleHelper */;
-			targetProxy = BCDBC33E208948A400FF83AE /* PBXContainerItemProxy */;
+			targetProxy = BC5FA4A6208E41E800B37EB3 /* PBXContainerItemProxy */;
 		};
 		BCDBC35A2089655D00FF83AE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -663,7 +661,7 @@
 		};
 		BC38BCEA2087E65E009D92AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCDBC3AA208A91E500FF83AE /* CEFSampleHelper_Ship.xcconfig */;
+			baseConfigurationReference = BCDBC3A6208A91E500FF83AE /* CEFSample_Ship.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = NO;
@@ -682,21 +680,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BCDBC3A5208A91E500FF83AE /* CEFSampleHelper_Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = /Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64;
-				HEADER_SEARCH_PATHS = (
-					/Users/yvonnedu/Source/CEF/chromium_git/chromium/src/cef/include,
-					/Users/yvonnedu/Source/CEF/chromium_git/chromium/src/cef/,
-				);
 				INFOPLIST_FILE = CEFSampleHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../../../../";
-				LIBRARY_SEARCH_PATHS = /Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64/obj/cef;
-				PRODUCT_BUNDLE_IDENTIFIER = ms.CEFSampleHelper;
-				PRODUCT_NAME = "CEFSample Helper";
 			};
 			name = Debug;
 		};
@@ -704,21 +692,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BCDBC3AA208A91E500FF83AE /* CEFSampleHelper_Ship.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = /Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64;
-				HEADER_SEARCH_PATHS = (
-					/Users/yvonnedu/Source/CEF/chromium_git/chromium/src/cef/include,
-					/Users/yvonnedu/Source/CEF/chromium_git/chromium/src/cef/,
-				);
 				INFOPLIST_FILE = CEFSampleHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../../../../";
-				LIBRARY_SEARCH_PATHS = /Users/yvonnedu/Source/CEF/chromium_git/chromium/src/out/Debug_GN_x64/obj/cef;
-				PRODUCT_BUNDLE_IDENTIFIER = ms.CEFSampleHelper;
-				PRODUCT_NAME = "CEFSample Helper";
 			};
 			name = Release;
 		};
