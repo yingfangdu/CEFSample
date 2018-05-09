@@ -42,7 +42,6 @@
 		BCDBC37E208A50DB00FF83AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDBC3292089140400FF83AE /* Cocoa.framework */; };
 		BCDBC381208A511C00FF83AE /* CEFBootstrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDBC37D208A4F3400FF83AE /* CEFBootstrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCDBC383208A519300FF83AE /* WebClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCDBC382208A519300FF83AE /* WebClient.mm */; };
-		BCDBC38A208A651A00FF83AE /* CEFGlue.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDBC389208A64FE00FF83AE /* CEFGlue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCDBC38C208A86FE00FF83AE /* BrowserWindowController.h in Sources */ = {isa = PBXBuildFile; fileRef = BCDBC38B208A86FE00FF83AE /* BrowserWindowController.h */; };
 		BCDBC38E208A888500FF83AE /* BrowserWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCDBC38D208A888500FF83AE /* BrowserWindowController.mm */; };
 		BCDBC39C208A908000FF83AE /* CEFGlue_Ship.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BCDBC396208A907F00FF83AE /* CEFGlue_Ship.xcconfig */; };
@@ -141,7 +140,6 @@
 		BCDBC37B208A4F1300FF83AE /* CEFBootstrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CEFBootstrapper.mm; sourceTree = "<group>"; };
 		BCDBC37D208A4F3400FF83AE /* CEFBootstrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEFBootstrapper.h; sourceTree = "<group>"; };
 		BCDBC382208A519300FF83AE /* WebClient.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WebClient.mm; sourceTree = "<group>"; };
-		BCDBC389208A64FE00FF83AE /* CEFGlue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEFGlue.h; sourceTree = "<group>"; };
 		BCDBC38B208A86FE00FF83AE /* BrowserWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrowserWindowController.h; sourceTree = "<group>"; };
 		BCDBC38D208A888500FF83AE /* BrowserWindowController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BrowserWindowController.mm; sourceTree = "<group>"; };
 		BCDBC396208A907F00FF83AE /* CEFGlue_Ship.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CEFGlue_Ship.xcconfig; sourceTree = "<group>"; };
@@ -287,7 +285,6 @@
 				BCDBC32C20892A5000FF83AE /* CEFBrowserView.mm */,
 				BCDBC37B208A4F1300FF83AE /* CEFBootstrapper.mm */,
 				BCDBC37D208A4F3400FF83AE /* CEFBootstrapper.h */,
-				BCDBC389208A64FE00FF83AE /* CEFGlue.h */,
 			);
 			path = CEFGlue;
 			sourceTree = "<group>";
@@ -324,7 +321,6 @@
 			files = (
 				BCDBC378208A4C2800FF83AE /* CEFApplication.h in Headers */,
 				BCDBC379208A4C2D00FF83AE /* CEFBrowserView.h in Headers */,
-				BCDBC38A208A651A00FF83AE /* CEFGlue.h in Headers */,
 				BCDBC381208A511C00FF83AE /* CEFBootstrapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -841,6 +837,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXPORTED_SYMBOLS_FILE = ./Exp/CEFGlue.exp;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = CEFGlue/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -865,6 +862,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXPORTED_SYMBOLS_FILE = ./Exp/CEFGlue.exp;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = CEFGlue/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
