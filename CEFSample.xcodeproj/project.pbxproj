@@ -841,6 +841,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BCDBC397208A907F00FF83AE /* CEFGlue_Debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -866,6 +867,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BCDBC396208A907F00FF83AE /* CEFGlue_Ship.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
