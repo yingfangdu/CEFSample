@@ -29,6 +29,7 @@
 		BC5FA4A5208E410400B37EB3 /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5FA49E208E409200B37EB3 /* libcef_dll_wrapper.a */; };
 		BC5FA4A9208E453900B37EB3 /* Chromium Embedded Framework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC5FA49C208E408000B37EB3 /* Chromium Embedded Framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BC5FA4AB208E46DA00B37EB3 /* CEFSample Helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC38BD022087F15E009D92AB /* CEFSample Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCD8AE4F20A3A232009CFB0F /* CEFGlue.exp in Sources */ = {isa = PBXBuildFile; fileRef = BCD8AE4E20A3A232009CFB0F /* CEFGlue.exp */; };
 		BCDBC32A2089140500FF83AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDBC3292089140400FF83AE /* Cocoa.framework */; };
 		BCDBC32F20892D5C00FF83AE /* BrowserWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCDBC32E20892D5C00FF83AE /* BrowserWindow.xib */; };
 		BCDBC34E2089653D00FF83AE /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC38BD102087F15E009D92AB /* main.mm */; };
@@ -128,6 +129,7 @@
 		BC3B50EC209A5F6F005E37FB /* CEFBAEHelper_Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CEFBAEHelper_Common.xcconfig; sourceTree = "<group>"; };
 		BC5FA49C208E408000B37EB3 /* Chromium Embedded Framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Chromium Embedded Framework.framework"; path = "../../../../Users/yvonnedu/Downloads/CEF/Release/Chromium Embedded Framework.framework"; sourceTree = "<group>"; };
 		BC5FA49E208E409200B37EB3 /* libcef_dll_wrapper.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcef_dll_wrapper.a; path = ../../../../Users/yvonnedu/Downloads/CEF/libcef_dll_wrapper/Release/libcef_dll_wrapper.a; sourceTree = "<group>"; };
+		BCD8AE4E20A3A232009CFB0F /* CEFGlue.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = CEFGlue.exp; sourceTree = "<group>"; };
 		BCDBC3292089140400FF83AE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BCDBC32C20892A5000FF83AE /* CEFBrowserView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CEFBrowserView.mm; sourceTree = "<group>"; };
 		BCDBC32E20892D5C00FF83AE /* BrowserWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrowserWindow.xib; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 		BC38BCCB2087E65E009D92AB = {
 			isa = PBXGroup;
 			children = (
+				BCD8AE4D20A3A232009CFB0F /* Exp */,
 				BCDBC38F208A8CD200FF83AE /* Config */,
 				BCDBC33920893FD200FF83AE /* CEFGlue */,
 				BC38BCD62087E65E009D92AB /* CEFSample */,
@@ -270,6 +273,14 @@
 				BC38BD122087F15E009D92AB /* CEFSampleHelper.entitlements */,
 			);
 			path = CEFSampleHelper;
+			sourceTree = "<group>";
+		};
+		BCD8AE4D20A3A232009CFB0F /* Exp */ = {
+			isa = PBXGroup;
+			children = (
+				BCD8AE4E20A3A232009CFB0F /* CEFGlue.exp */,
+			);
+			path = Exp;
 			sourceTree = "<group>";
 		};
 		BCDBC33920893FD200FF83AE /* CEFGlue */ = {
@@ -545,6 +556,7 @@
 				BCDBC38C208A86FE00FF83AE /* BrowserWindowController.h in Sources */,
 				BC38BCDC2087E65E009D92AB /* ViewController.mm in Sources */,
 				BC38BCE42087E65E009D92AB /* main.mm in Sources */,
+				BCD8AE4F20A3A232009CFB0F /* CEFGlue.exp in Sources */,
 				BCDBC38E208A888500FF83AE /* BrowserWindowController.mm in Sources */,
 				BC38BCD92087E65E009D92AB /* AppDelegate.m in Sources */,
 			);
