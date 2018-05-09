@@ -13,6 +13,12 @@
 		BC38BCE12087E65E009D92AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC38BCDF2087E65E009D92AB /* Main.storyboard */; };
 		BC38BCE42087E65E009D92AB /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC38BCE32087E65E009D92AB /* main.mm */; };
 		BC38BD112087F15E009D92AB /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC38BD102087F15E009D92AB /* main.mm */; };
+		BC3B50E0209A5F17005E37FB /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC38BD102087F15E009D92AB /* main.mm */; };
+		BC3B50E2209A5F17005E37FB /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5FA49E208E409200B37EB3 /* libcef_dll_wrapper.a */; };
+		BC3B50E3209A5F17005E37FB /* Chromium Embedded Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5FA49C208E408000B37EB3 /* Chromium Embedded Framework.framework */; };
+		BC3B50ED209A5F6F005E37FB /* CEFBAEHelper_Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BC3B50EA209A5F6E005E37FB /* CEFBAEHelper_Debug.xcconfig */; };
+		BC3B50EE209A5F6F005E37FB /* CEFBAEHelper_Ship.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BC3B50EB209A5F6F005E37FB /* CEFBAEHelper_Ship.xcconfig */; };
+		BC3B50EF209A5F6F005E37FB /* CEFBAEHelper_Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BC3B50EC209A5F6F005E37FB /* CEFBAEHelper_Common.xcconfig */; };
 		BC5FA49D208E408000B37EB3 /* Chromium Embedded Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5FA49C208E408000B37EB3 /* Chromium Embedded Framework.framework */; };
 		BC5FA49F208E409200B37EB3 /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5FA49E208E409200B37EB3 /* libcef_dll_wrapper.a */; };
 		BC5FA4A0208E40A500B37EB3 /* Chromium Embedded Framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5FA49C208E408000B37EB3 /* Chromium Embedded Framework.framework */; };
@@ -55,6 +61,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BC3B50F0209A5FB5005E37FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC38BCCC2087E65E009D92AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC3B50DE209A5F17005E37FB;
+			remoteInfo = "Microsoft Bing Ads Editor Helper";
+		};
 		BC5FA4A6208E41E800B37EB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BC38BCCC2087E65E009D92AB /* Project object */;
@@ -109,6 +122,11 @@
 		BC38BD0F2087F15E009D92AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC38BD102087F15E009D92AB /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		BC38BD122087F15E009D92AB /* CEFSampleHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CEFSampleHelper.entitlements; sourceTree = "<group>"; };
+		BC3B50E8209A5F17005E37FB /* Microsoft Bing Ads Editor Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Microsoft Bing Ads Editor Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC3B50E9209A5F17005E37FB /* app Helper copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "app Helper copy-Info.plist"; path = "/Volumes/Yvonne/GitHub/CEFSample/app Helper copy-Info.plist"; sourceTree = "<absolute>"; };
+		BC3B50EA209A5F6E005E37FB /* CEFBAEHelper_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CEFBAEHelper_Debug.xcconfig; sourceTree = "<group>"; };
+		BC3B50EB209A5F6F005E37FB /* CEFBAEHelper_Ship.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CEFBAEHelper_Ship.xcconfig; sourceTree = "<group>"; };
+		BC3B50EC209A5F6F005E37FB /* CEFBAEHelper_Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CEFBAEHelper_Common.xcconfig; sourceTree = "<group>"; };
 		BC5FA49C208E408000B37EB3 /* Chromium Embedded Framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Chromium Embedded Framework.framework"; path = "../../../../Users/yvonnedu/Downloads/CEF/Release/Chromium Embedded Framework.framework"; sourceTree = "<group>"; };
 		BC5FA49E208E409200B37EB3 /* libcef_dll_wrapper.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcef_dll_wrapper.a; path = ../../../../Users/yvonnedu/Downloads/CEF/libcef_dll_wrapper/Release/libcef_dll_wrapper.a; sourceTree = "<group>"; };
 		BCDBC3292089140400FF83AE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -162,6 +180,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC3B50E1209A5F17005E37FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC3B50E2209A5F17005E37FB /* libcef_dll_wrapper.a in Frameworks */,
+				BC3B50E3209A5F17005E37FB /* Chromium Embedded Framework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCDBC34F2089653D00FF83AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +220,7 @@
 				BC38BD032087F15E009D92AB /* CEFSampleHelper */,
 				BC38BCD52087E65E009D92AB /* Products */,
 				BC38BCEB2087E6BD009D92AB /* Frameworks */,
+				BC3B50E9209A5F17005E37FB /* app Helper copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +231,7 @@
 				BC38BD022087F15E009D92AB /* CEFSample Helper.app */,
 				BCDBC3572089653D00FF83AE /* app Helper.app */,
 				BCDBC365208A4BDD00FF83AE /* CEFGlue.framework */,
+				BC3B50E8209A5F17005E37FB /* Microsoft Bing Ads Editor Helper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -266,6 +295,9 @@
 		BCDBC38F208A8CD200FF83AE /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				BC3B50EC209A5F6F005E37FB /* CEFBAEHelper_Common.xcconfig */,
+				BC3B50EA209A5F6E005E37FB /* CEFBAEHelper_Debug.xcconfig */,
+				BC3B50EB209A5F6F005E37FB /* CEFBAEHelper_Ship.xcconfig */,
 				BCDBC3A8208A91E500FF83AE /* CEFappHelper_Common.xcconfig */,
 				BCDBC3A4208A91E500FF83AE /* CEFappHelper_Debug.xcconfig */,
 				BCDBC3A2208A91E400FF83AE /* CEFappHelper_Ship.xcconfig */,
@@ -312,6 +344,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BC3B50F1209A5FB5005E37FB /* PBXTargetDependency */,
 				BC5FA4A7208E41E800B37EB3 /* PBXTargetDependency */,
 				BCDBC35A2089655D00FF83AE /* PBXTargetDependency */,
 				BCDBC36B208A4BDE00FF83AE /* PBXTargetDependency */,
@@ -336,6 +369,23 @@
 			name = CEFSampleHelper;
 			productName = CEFSampleHelper;
 			productReference = BC38BD022087F15E009D92AB /* CEFSample Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC3B50DE209A5F17005E37FB /* Microsoft Bing Ads Editor Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC3B50E5209A5F17005E37FB /* Build configuration list for PBXNativeTarget "Microsoft Bing Ads Editor Helper" */;
+			buildPhases = (
+				BC3B50DF209A5F17005E37FB /* Sources */,
+				BC3B50E1209A5F17005E37FB /* Frameworks */,
+				BC3B50E4209A5F17005E37FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Microsoft Bing Ads Editor Helper";
+			productName = CEFSampleHelper;
+			productReference = BC3B50E8209A5F17005E37FB /* Microsoft Bing Ads Editor Helper.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BCDBC34C2089653D00FF83AE /* app Helper */ = {
@@ -400,6 +450,9 @@
 							};
 						};
 					};
+					BC3B50DE209A5F17005E37FB = {
+						ProvisioningStyle = Automatic;
+					};
 					BCDBC34C2089653D00FF83AE = {
 						ProvisioningStyle = Automatic;
 					};
@@ -426,6 +479,7 @@
 				BC38BD012087F15E009D92AB /* CEFSampleHelper */,
 				BCDBC34C2089653D00FF83AE /* app Helper */,
 				BCDBC364208A4BDD00FF83AE /* CEFGlue */,
+				BC3B50DE209A5F17005E37FB /* Microsoft Bing Ads Editor Helper */,
 			);
 		};
 /* End PBXProject section */
@@ -435,11 +489,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC3B50EF209A5F6F005E37FB /* CEFBAEHelper_Common.xcconfig in Resources */,
+				BC3B50EE209A5F6F005E37FB /* CEFBAEHelper_Ship.xcconfig in Resources */,
 				BCDBC3B0208A91E500FF83AE /* CEFSampleHelper_Common.xcconfig in Resources */,
 				BCDBC32F20892D5C00FF83AE /* BrowserWindow.xib in Resources */,
 				BCDBC3B1208A91E500FF83AE /* CEFappHelper_Common.xcconfig in Resources */,
 				BCDBC3AD208A91E500FF83AE /* CEFappHelper_Debug.xcconfig in Resources */,
 				BC38BCDE2087E65E009D92AB /* Assets.xcassets in Resources */,
+				BC3B50ED209A5F6F005E37FB /* CEFBAEHelper_Debug.xcconfig in Resources */,
 				BCDBC3AC208A91E500FF83AE /* CEFSample_Common.xcconfig in Resources */,
 				BCDBC3B2208A91E500FF83AE /* CEFSample_Debug.xcconfig in Resources */,
 				BCDBC39D208A908000FF83AE /* CEFGlue_Debug.xcconfig in Resources */,
@@ -455,6 +512,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BC38BD002087F15E009D92AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC3B50E4209A5F17005E37FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -498,6 +562,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC3B50DF209A5F17005E37FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC3B50E0209A5F17005E37FB /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCDBC34D2089653D00FF83AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -520,6 +592,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BC3B50F1209A5FB5005E37FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC3B50DE209A5F17005E37FB /* Microsoft Bing Ads Editor Helper */;
+			targetProxy = BC3B50F0209A5FB5005E37FB /* PBXContainerItemProxy */;
+		};
 		BC5FA4A7208E41E800B37EB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BC38BD012087F15E009D92AB /* CEFSampleHelper */;
@@ -700,6 +777,32 @@
 			};
 			name = Release;
 		};
+		BC3B50E6209A5F17005E37FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC3B50EA209A5F6E005E37FB /* CEFBAEHelper_Debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "app Helper copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../../../../";
+				PRODUCT_BUNDLE_IDENTIFIER = ms.CEFSampleHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC3B50E7209A5F17005E37FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC3B50EB209A5F6F005E37FB /* CEFBAEHelper_Ship.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "app Helper copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../../../../";
+				PRODUCT_BUNDLE_IDENTIFIER = ms.CEFSampleHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		BCDBC3552089653D00FF83AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BCDBC3A4208A91E500FF83AE /* CEFappHelper_Debug.xcconfig */;
@@ -800,6 +903,15 @@
 			buildConfigurations = (
 				BC38BD142087F15E009D92AB /* Debug */,
 				BC38BD152087F15E009D92AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC3B50E5209A5F17005E37FB /* Build configuration list for PBXNativeTarget "Microsoft Bing Ads Editor Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC3B50E6209A5F17005E37FB /* Debug */,
+				BC3B50E7209A5F17005E37FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

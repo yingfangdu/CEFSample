@@ -44,6 +44,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>Microsoft Bing Ads Editor Helper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>app Helper Debug.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -54,6 +59,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>app Helper copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -63,6 +73,11 @@
 			<true/>
 		</dict>
 		<key>BC38BD012087F15E009D92AB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC3B50DE209A5F17005E37FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
