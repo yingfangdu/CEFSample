@@ -12,6 +12,8 @@
 
 @interface CEFBootstrapper : NSObject
 + (void)initializeCEF;
++ (void)runCEFLoop;
++ (void)terminateCEFLoop;
 + (void)shutDownCEF;
 @end
 

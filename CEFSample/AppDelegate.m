@@ -14,11 +14,12 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    [CEFBootstrapper initializeCEF];
+    [CEFBootstrapper runCEFLoop];
+    [CEFBootstrapper shutDownCEF];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
-    [CEFBootstrapper shutDownCEF];
+    [CEFBootstrapper terminateCEFLoop];
 }
 
 @end
