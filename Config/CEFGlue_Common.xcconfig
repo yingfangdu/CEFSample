@@ -1,3 +1,5 @@
 #include "Common.xcconfig"
 
 PRODUCT_NAME = CEFGlue
+
+LD_RUNPATH_SEARCH_PATHS = @loader_path/../../../..

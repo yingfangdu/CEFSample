@@ -61,26 +61,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BC3B50F0209A5FB5005E37FB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BC38BCCC2087E65E009D92AB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BC3B50DE209A5F17005E37FB;
-			remoteInfo = "Microsoft Bing Ads Editor Helper";
-		};
 		BC5FA4A6208E41E800B37EB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BC38BCCC2087E65E009D92AB /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BC38BD012087F15E009D92AB;
 			remoteInfo = CEFSampleHelper;
-		};
-		BCDBC3592089655D00FF83AE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BC38BCCC2087E65E009D92AB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BCDBC34C2089653D00FF83AE;
-			remoteInfo = "app Helper";
 		};
 		BCDBC36A208A4BDE00FF83AE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -351,9 +337,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				BC3B50F1209A5FB5005E37FB /* PBXTargetDependency */,
 				BC5FA4A7208E41E800B37EB3 /* PBXTargetDependency */,
-				BCDBC35A2089655D00FF83AE /* PBXTargetDependency */,
 				BCDBC36B208A4BDE00FF83AE /* PBXTargetDependency */,
 			);
 			name = CEFSample;
@@ -600,20 +584,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BC3B50F1209A5FB5005E37FB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BC3B50DE209A5F17005E37FB /* Microsoft Bing Ads Editor Helper */;
-			targetProxy = BC3B50F0209A5FB5005E37FB /* PBXContainerItemProxy */;
-		};
 		BC5FA4A7208E41E800B37EB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BC38BD012087F15E009D92AB /* CEFSampleHelper */;
 			targetProxy = BC5FA4A6208E41E800B37EB3 /* PBXContainerItemProxy */;
-		};
-		BCDBC35A2089655D00FF83AE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BCDBC34C2089653D00FF83AE /* app Helper */;
-			targetProxy = BCDBC3592089655D00FF83AE /* PBXContainerItemProxy */;
 		};
 		BCDBC36B208A4BDE00FF83AE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -854,7 +828,6 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = CEFGlue/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ms.CEFGlue;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -880,7 +853,6 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = CEFGlue/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ms.CEFGlue;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
