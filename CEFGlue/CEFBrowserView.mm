@@ -52,6 +52,25 @@
     }
 }
 
+-(void)showDevTools
+{
+    if ([self isBrowserInitialized])
+    {
+        CefWindowInfo window_info;
+        CefBrowserSettings browser_settings;
+        CefPoint point;
+        self->_browser->GetHost()->ShowDevTools(window_info, NULL, browser_settings, point);
+    }
+}
+
+-(void)closeDevTools
+{
+    if ([self isBrowserInitialized])
+    {
+        self->_browser->GetHost()->CloseDevTools();
+    }
+}
+
 - (void)createCEFBrowser:(NSString *)initialUrl
 {
     // Create the web browser view.

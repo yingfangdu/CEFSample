@@ -10,6 +10,7 @@
 #import "CEFBrowserView.h"
 
 @interface TestBrowserWindowController : NSWindowController
+- (IBAction)OpenDevTool:(id)sender;
 @property (assign) IBOutlet NSTextField *URLField;
 @property (strong, nonatomic) IBOutlet CEFBrowserView *browserView;
 @end

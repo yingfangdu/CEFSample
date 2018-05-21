@@ -20,6 +20,8 @@
 -(bool)isBrowserInitialized;
 -(void)navigateTo:(NSString*)location;
 -(void)reload;
+-(void)showDevTools;
+-(void)closeDevTools;
 @end
 
 #endif /* CEFBrowserView_h */

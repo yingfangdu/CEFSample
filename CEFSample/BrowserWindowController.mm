@@ -23,4 +23,18 @@
     
     return false;
 }
+- (IBAction)CloseDevTool:(id)sender {
+    if ([self browserView] != nil)
+    {
+        [[self browserView] closeDevTools];
+    }
+}
+
+- (IBAction)OpenDevTool:(id)sender {
+    
+    if ([self browserView] != nil)
+    {
+        [[self browserView] showDevTools];
+    }
+}
 @end
